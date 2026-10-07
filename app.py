@@ -72,14 +72,13 @@ st.caption("Showcase your visual content across 5 major platforms and get instan
 
 with st.sidebar:
     st.header("🔑 Configuration")
-   default_api_key = st.secrets.get("GEMINI_API_KEY", "")
-
-gemini_api_key = st.text_input(
-    "Google AI Studio API Key",
-    value=default_api_key,
-    type="password",
-    help="Enter your Gemini API Key to unlock real-time optimization updates.",
-)
+    default_api_key = st.secrets.get("GEMINI_API_KEY", "")
+    gemini_api_key = st.text_input(
+        "Google AI Studio API Key",
+        value=default_api_key,
+        type="password",
+        help="Enter your Gemini API Key to unlock real-time optimization updates."
+    )
     st.divider()
     st.markdown("### 💼 Portfolio Quick-Load")
     st.selectbox(
